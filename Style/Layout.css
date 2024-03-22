@@ -1,17 +1,17 @@
+/* Reset de Margens e Preenchimentos */
 *{
     margin: 0px;
     padding: 0px;
 }
 
+/* Estilos do Corpo */
 body{
     background-image: url(../IMG/pattern-11@2x.png);
     background-size: cover;
     font-family: 'Roboto', sans-serif;
 }
 
-
-/* seção do layout logo*/
-/*Pula linha*/
+/* Estilos do Cabeçalho Secundário */
 
 .secondHeader {
     position: absolute;
@@ -31,7 +31,7 @@ body{
 }
 
 
-/* layout dos input's */
+/* Estilos do Contêiner de Entrada */
 .input-container{
     position: absolute;
     top: 78%;
@@ -46,6 +46,7 @@ body{
     opacity: 1;
 }
 
+/* Estilos do Menu a baixo */
 .Title-menu{
     display: grid;
     grid-auto-flow: column;
@@ -56,6 +57,8 @@ body{
     padding-top: 22px;
     padding-left: 48px;
 }
+/* Estilos do Menu acima */
+
 
 /* botão ligar / desligar a baixo*/
 
@@ -168,11 +171,7 @@ body{
 }
 
 
-/*input menu a baixo acima*/
-
-
-
-/* Estilo para o rótulo */
+/*input menu acima*/
 
 
 /*Abaixo estilo do input de carregamento de imagem*/
@@ -251,7 +250,6 @@ button:hover{
 
 /*container pedidos*/
 
-
 .FriedPastry {
     display: grid;
     grid-auto-flow: column;
@@ -312,19 +310,12 @@ button:hover{
     margin-left: 5px;
 }
 
-/*container pedidos*/
+/*container acima pedidos*/
 
 
-#requestsDrinkContainer img {
-    position: absolute;
-    width: 150px;
-    border-radius: 10px;
-    top: 50%; 
-    transform: translateY(-50%);
-    left: -65px;
-}
 
-/*teste a baixo*/
+
+/*campo dos pedidos (Bebidas) a baixo*/
 
 #requestsDrinkContainer{
     position: relative;
@@ -339,8 +330,18 @@ button:hover{
     margin-bottom: 80px;
 }
 
-/*teste do campo imagem*/
+#requestsDrinkContainer img {
+    position: absolute;
+    width: 150px;
+    border-radius: 10px;
+    top: 50%; 
+    transform: translateY(-50%);
+    left: -65px;
+}
 
+/*campo dos pedidos (Bebidas) acima*/
+
+/*Campo de Upload de imagens a baixo*/
 .demonstration{
     color: #A03400;;
     border: 1px solid #E43636;
@@ -371,3 +372,4 @@ button:hover{
     margin: 0 auto;
     border-radius: 20px;
 }
+/*Campo de Upload de imagens acima*/

@@ -3,119 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <script src="https://cdn.jsdelivr.net/npm/vue@3"></script>
-
-    <script src="./Script/Main.js" defer></script>
-
-    <link rel="stylesheet" href="./Style/Layout.css">
-
-    <link rel="stylesheet" href="./MediaQueries/resolution.css">
-
-    <link rel="stylesheet" href="./MediaQueriesSecond/Resolution.css">
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Roboto+Italic&display=swap">
-
     <title>Pastel de Ideias</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3"></script>
+    <script src="./Script/Main.js" defer></script>
+    <link rel="stylesheet" href="./Style/Layout.css">
+    <link rel="stylesheet" href="./MediaQueries/resolution.css">
+    <link rel="stylesheet" href="./MediaQueriesSecond/Resolution.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Roboto+Italic&display=swap">
 </head>
 <body>
 
     <header>
-        <img src="./IMG/Design Header.png" width="100%">
+        <img src="./IMG/Design Header.png" alt="Cabeçalho do site" width="100%">
     </header>
 
+
     <div class="secondHeader">
-        <img class="FriedPastryIMGHeader" src="./IMG/pastel-paralax@2x.png">
+        <img class="FriedPastryIMGHeader" src="./IMG/pastel-paralax@2x.png" alt="Imagem de fundo do cabeçalho secundário">
     </div>
 
+
     <div class="input-container">
-
-        <!--Div para o h1 e switch a baixo-->
+        
+        <!-- Div para o h1 e switch abaixo -->
         <div class="Title-menu">
-
-                 <h2>Monte aqui o seu cardápio.<strong> O que está esperando?</strong></h2>
-            
-
+            <h2>Monte aqui o seu cardápio.<strong> O que está esperando?</strong></h2>
             <div class="checkFoodOrDrink">
-
                 <p>Comida</p>
-
-                <input type="checkbox" id="check" onclick="javascript:ButonFood(this)"/>
-                
+                <input type="checkbox" id="check" onclick="javascript:ButonFood(this)" aria-label="Selecione se é comida" />
                 <label for="check" class="switch">
-
                     <span class="slider"></span>
-                    
                 </label>
-
                 <p>Bebida</p>
-
             </div>
-            
         </div>
-        <!--Div para o h1 e switch acima-->
+        <!-- Div para o h1 e switch acima -->
 
-        <!--Div para input valores a baixo-->
+
+        <!-- Div para input valores abaixo -->
         <div class="menu">
 
             <div class="menuOrder">
-
-                <input type="text" id="inputTitle"  placeholder="Titulo do pedido" required>
-
+                <input type="text" id="inputTitle" placeholder="Título do pedido" required>
                 <input type="text" id="inputTasting" class="inputField" placeholder="Sabor" required>
-
                 <input id="ValueOfFood" type="number" class="inputField" placeholder="R$" required>
-
             </div>
 
             <input id="TextArea" type="text" placeholder="Descrição" required>
 
-
-            <!--Pula LInha-->
-
+            <!-- Pula Linha -->
             <div class="demonstration">
                 <form @submit.prevent="submitForm" enctype="multipart/form-data">
-
                     <!-- Input de arquivo oculto -->
                     <input type="file" id="imagem" ref="fileInput" accept="image/jpeg, image/png" @change="previewImage" style="display: none;">
-                    
                     <!-- Elemento personalizado -->
                     <label id="imageContent" for="imagem" class="custom-file-upload-label">
-
                         <img src="./IMG/icon.png" alt="Ícone de imagem">
                         <br>
                         <span>Jogue aqui o arquivo de imagem do seu pastel ou clique para localizar a pasta.</span>
-
                     </label>
-                    
                     <!-- Pré-visualização da imagem -->
-                    <img id="imagem-preview" :src="imagePreview" alt="Imagem Preview" style="display: none;">
-                    
+                    <img id="imagem-preview" :src="imagePreview" alt="Pré-visualização da imagem" style="display: none;">
                 </form>
             </div>
-            
-            
-            
-            <!--Pula LInha-->
+            <!-- Pula Linha -->
 
         </div>
-        
+
 
         <div id="app">
 
             <div class="shoppingButtons">
-
                 <button @click="Limpar">Limpar</button>
                 <button @click="Cadastrar">Cadastrar</button>
-
             </div>
 
         </div>
 
-
-
     </div>
-    
 
 </body>
 </html>
