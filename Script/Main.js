@@ -64,7 +64,7 @@ const app = Vue.createApp({
             newFood.innerHTML = `
                 <img src="${foodImage}">
                 <div class="FriedPastry">
-                    <h2>"Ajeita rapidinho pra mim"</h2>
+                    <h2>${inputTitle}</h2>
                     <h3>R$:10,00</h3>
                 </div>
                 <div class="InfoPastry">
@@ -78,7 +78,7 @@ const app = Vue.createApp({
             newDrink.innerHTML = `
                 <img src="${drinkImage}">
                 <div class="FriedPastry">
-                    <h2>"Ajeita rapidinho pra mim"</h2>
+                    <h2>${inputTitle}</h2>
                     <h3>R$:05,00</h3>
                 </div>
                 <div class="InfoPastry">
