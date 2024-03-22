@@ -8,7 +8,7 @@
     }
 
     .input-container{
-        margin-top: 220px;
+        top: 60%;
         width: 100%;
         height: 588px;
         background: linear-gradient(to bottom, #FFCA00 5%, #FFFFFF 20%);

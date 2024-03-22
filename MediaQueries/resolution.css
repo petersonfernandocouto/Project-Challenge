@@ -8,7 +8,7 @@
     }
 
     .input-container{
-        margin-top: 80px;
+        top: 43%;
         width: 100%;
         height: 588px;
         background: linear-gradient(to bottom, #FFCA00 5%, #FFFFFF 20%);
@@ -32,6 +32,7 @@
     }
 
     .switch{
+        width: 32px;
         height: 7px;
     }
 
@@ -46,7 +47,7 @@
     }
 
     #check:checked ~ .switch .slider {
-        transform: translateX(20px);
+        transform: translateX(24px);
     }
 
     /*acima está display do header do menu*/
@@ -62,12 +63,12 @@
     }
 
     .menuOrder input{
-        width: 272px;
+        width: 265px;
         margin-bottom: 20px;
     }
 
     #ValueOfFood{
-        width: 272px;
+        width: 265px;
     }
 
     #TextArea{
@@ -169,7 +170,7 @@
     }
 
     .input-container{
-        margin-top: 90px;
+        top: 33%;
         width: 100%;
         height: 588px;
         background: linear-gradient(to bottom, #FFCA00 5%, #FFFFFF 20%);
@@ -330,7 +331,7 @@
     }
 
     .input-container{
-        margin-top: 102px;
+        top: 45%;
         width: 100%;
         height: 588px;
         background: linear-gradient(to bottom, #FFCA00 5%, #FFFFFF 20%);
@@ -655,7 +656,7 @@
     }
 
     .input-container{
-        margin-top: 170px;
+        top: 54%;
         width: 100%;
         height: 588px;
         background: linear-gradient(to bottom, #FFCA00 5%, #FFFFFF 20%);

@@ -93,7 +93,7 @@ body{
 }
 
 #check:checked ~ .switch .slider {
-    transform: translateX(30px);
+    transform: translateX(32px);
 }
 
 /* botão ligar / desligar acima*/
