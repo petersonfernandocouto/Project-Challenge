@@ -1,0 +1,373 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: url(../IMG/pattern-11@2x.png);
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* seção do layout logo*/
+/*Pula linha*/
+
+.secondHeader {
+    position: absolute;
+    top: 127px;
+    left: 70px;
+    width: 100%;
+    max-width: 200px; 
+    height: auto;
+    z-index: 1;
+}
+
+
+.FriedPastryIMGHeader {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+
+/* layout dos input's */
+.input-container{
+    position: absolute;
+    top: 78%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1080px;
+    height: 420px;
+    background: linear-gradient(to bottom, #FFCA00 22%, #FFFFFF 20%);
+    color: #A03400;
+    box-shadow: 0px 0px 30px #740B0B45;
+    border-radius: 20px;
+    opacity: 1;
+}
+
+.Title-menu{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 70% 30%;
+}
+
+.Title-menu h2{
+    padding-top: 22px;
+    padding-left: 48px;
+}
+
+/* botão ligar / desligar a baixo*/
+
+#check{
+    display: none;
+}
+
+.switch{
+    position: relative;
+    background-color: #FFFFFF;
+    width: 52px;
+    height: 15px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.slider {
+    position: absolute;
+    background-color: #E33535;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    transition: all .3s ease-in-out;;
+}
+
+.InfoPastry {
+    padding-left: 50%;
+}
+
+#check:checked ~ .switch{
+    background-color:#FFFFFF ;
+}
+
+#check:checked ~ .switch .slider {
+    transform: translateX(30px);
+}
+
+/* botão ligar / desligar acima*/
+
+
+/* Estilo para os parágrafos dentro de .checkFoodOrDrink a baixo*/
+
+.checkFoodOrDrink {
+    padding-top: 22px;
+    padding-left: 90px;
+    display: flex;
+    align-items: center;
+}
+
+.checkFoodOrDrink p {
+    font-family: adobe-clean, sans-serif;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+/* Estilo para os parágrafos dentro de .checkFoodOrDrink acima */
+
+/*input menu a baixo*/
+
+.menu{
+    margin-top: 18px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.menu input{
+    color: #A03400;;
+    border: 1px solid #E43636;
+    border-radius: 10px;
+    outline: none;
+}
+
+.menuOrder{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 40% 40% 20%;
+    margin-bottom: 30px;
+}
+
+.menuOrder input{
+    padding: 10px;
+    padding-left: 20px;
+    width: 345px;
+    height: 20px;
+    opacity: 1;
+}
+
+.menu input::placeholder {
+    color: #A03400;
+}
+
+#ValueOfFood{
+    width: 160px; 
+}
+
+#ValueOfFood::-webkit-inner-spin-button,
+#ValueOfFood::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+#TextArea{
+    padding-left: 10px;
+    width: 1013px;
+    height: 80px;
+    margin-bottom: 30px;
+}
+
+
+/*input menu a baixo acima*/
+
+
+
+/* Estilo para o rótulo */
+
+
+/*Abaixo estilo do input de carregamento de imagem*/
+#imageUpload {
+    display: none;
+}
+
+
+.file-upload-label {
+    width: 1003px;
+    height: 80px;
+    border: 1px solid #E43636;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.icon-container {
+    margin-bottom: 10px; 
+}
+
+.file-upload-label img {
+    width: 50px; 
+    height: 50px; 
+}
+
+/*acima estilo do input de carregamento de imagem*/
+
+
+/*Botões a baixo*/
+
+.shoppingButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 20px;
+}
+
+button{
+    background: rgb(49,47,49);
+    border-radius: 20px;
+    border: none;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: white;
+    width: 150px;
+    height: 45px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+button:nth-child(1){
+    background-color: #E43636;
+    color: white;
+}
+
+button:nth-child(2) {
+    margin-left: 15px;
+    background-color: #FFCA00;
+    color: #A03400;
+}
+
+button:hover{
+    transform: translateY(-2px);
+    transition-duration: 0.5s ;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.548);
+}
+/*Botões acima*/
+
+
+/*container pedidos*/
+
+
+.FriedPastry {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 70% 30%;
+    position: relative; 
+}
+
+.FriedPastry h2 {
+    padding-left: 180px;
+    padding-top: 22px;
+    color: #FFCA00;
+}
+
+.FriedPastry h3 {
+    color: white;
+    padding-top: 22px;
+    padding-left: 200px;
+}
+
+#requestsFoodContainer{
+    position: relative;
+    margin-top: 120px;
+    width: 1080px;
+    height: 202px;
+    background: linear-gradient(to bottom, #E43636 35%, #FFFFFF 20%);
+    color: #A03400;
+    box-shadow: 0px 0px 30px #740B0B45;
+    border-radius: 20px;
+    opacity: 1;
+    margin-bottom: 80px;
+}
+
+
+#requestsFoodContainer img {
+    position: absolute;
+    width: 150px;
+    height: 170px;
+    border-radius: 10px;
+    top: 50%; 
+    transform: translateY(-50%);
+    left: -65px;
+}
+
+.InfoPastry {
+    padding-left: 180px;
+    padding-top: 50px;
+}
+
+.InfoPastry h3,
+.InfoPastry p {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+}
+
+
+.InfoPastry h3 + p {
+    margin-left: 5px;
+}
+
+/*container pedidos*/
+
+
+#requestsDrinkContainer img {
+    position: absolute;
+    width: 150px;
+    border-radius: 10px;
+    top: 50%; 
+    transform: translateY(-50%);
+    left: -65px;
+}
+
+/*teste a baixo*/
+
+#requestsDrinkContainer{
+    position: relative;
+    margin-top: 120px;
+    width: 1080px;
+    height: 202px;
+    background: linear-gradient(to bottom, #E43636 35%, #FFFFFF 20%);
+    color: #A03400;
+    box-shadow: 0px 0px 30px #740B0B45;
+    border-radius: 20px;
+    opacity: 1;
+    margin-bottom: 80px;
+}
+
+/*teste do campo imagem*/
+
+.demonstration{
+    color: #A03400;;
+    border: 1px solid #E43636;
+    border-radius: 10px;
+    text-align: center;
+    height: 132px;
+    width: 1023px;
+}
+
+.custom-file-upload-label {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.custom-file-upload-label img {
+    max-width: 50px;
+    max-height: 50px;
+    margin-right: 10px;
+}
+
+#imagem-preview{
+    padding-top: 1px;
+    width: 160px;
+    height: 130px;
+    display: block; 
+    margin: 0 auto;
+    border-radius: 20px;
+}

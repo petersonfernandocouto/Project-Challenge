@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+@media screen and (min-width:769px)  and (max-width:1024px){
+
+    /*a baixo está display do header do menu*/
+    .secondHeader{
+        display: none;
+    }
+
+    .input-container{
+        margin-top: 220px;
+        width: 100%;
+        height: 588px;
+        background: linear-gradient(to bottom, #FFCA00 5%, #FFFFFF 20%);
+    }
+
+    .Title-menu{
+        font-size: 10px;
+        grid-template-columns:50% 50%;
+    }
+
+    .Title-menu h2{
+        padding-left: 40px;
+    }
+
+    .checkFoodOrDrink{
+        padding-left: 160px;
+    }
+
+    strong{
+        display: none;
+    }
+
+    .switch{
+        height: 7px;
+    }
+
+    .checkFoodOrDrink p{
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .slider{
+        width: 22px;
+        height: 22px;
+    }
+
+    #check:checked ~ .switch .slider {
+        transform: translateX(30px);
+    }
+
+    /*acima está display do header do menu*/
+
+    /*a baixo está display do input titulo/sabor/R$*/
+
+    .menuOrder {
+        display: block;
+    }
+
+    .menu{
+        margin-left: 10px;
+    }
+
+    .menuOrder input{
+        width: 98%;
+        margin-bottom: 20px;
+    }
+
+    #ValueOfFood{
+        width: 98%;
+    }
+
+    #TextArea{
+        width: 100%;
+    }
+
+    .demonstration{
+        width: 100%;
+    }
+
+/*designer campo de comida a baixo*/
+
+    #requestsFoodContainer{
+        width: 90%;
+        height: 400px;
+        margin: 0 auto;
+        margin-top: 10px;
+        background: linear-gradient(to bottom, #E43636 25%, #FFFFFF 20%);
+    }
+
+    .InfoPastry {
+        padding-left: 50%;
+    }
+
+    .FriedPastry h2{
+        font-size: 18px;
+        padding-left: 10px;
+        padding-top: 40px;
+    }
+
+    .InfoPastry h3{
+        font-size: 18px;
+        padding-left: 10px;
+        margin-top: 10px;
+    }
+
+    .InfoPastry p{
+        margin-top: 10px;
+    }
+
+    #requestsFoodContainer img{
+        left: 20px;
+        padding-top: 50px;
+    }
+
+    #requestsFoodContainer .FriedPastry h3 {
+        display: block;
+        font-size: 16px;
+        padding-top: 40px;
+        padding-left: 10px;
+    }
+
+    /*designer campo de comida acima*/
+
+    #requestsDrinkContainer{
+        margin: 0 auto;
+        margin-top: 10px;
+        width: 90%;
+        height: 400px;
+        background: linear-gradient(to bottom, #E43636 25%, #FFFFFF 20%);
+    }
+
+    /* Ajuste do padding-left da div .InfoPastry */
+    #requestsFoodContainer .InfoPastry,
+    #requestsDrinkContainer .InfoPastry {
+        padding-left: 170px;
+        padding-top: 120px;
+    }
+
+    #requestsDrinkContainer img{
+        left: 20px;
+        padding-top: 50px;
+    }
+
+    #requestsDrinkContainer .FriedPastry h3 {
+        display: block;
+        font-size: 16px;
+        padding-top: 40px;
+        padding-left: 10px;
+    }
+}
+
+@media screen and (min-width:1900px){
+
+    .input-container{
+        width: 1200px;
+        margin-top: 50px;
+        margin-left: 180px;
+    }
+
+    .secondHeader{
+        display: none;
+    }
+
+}
